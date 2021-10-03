@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.util.ArrayList;
+
 public class Battle {
     private int playerShips = 10, computerShips = 10;
     private String[][] playerGrid, computerGrid;
@@ -8,7 +10,7 @@ public class Battle {
     private Map playerMap, computerMap;
     private int numRows, numCols;
 
-    public Battle() {
+    public Battle(int size, boolean hide) {
     }
 
     public void turn() {
@@ -20,11 +22,11 @@ public class Battle {
     public void deployShip() {
     }
 
-    public int getRandomWay() {
+    public int getRandomWay(boolean[] ways) {
         return 0;
     }
 
-    public boolean isAvailable() {
+    public boolean isAvailable(int x, int y, ArrayList<String> ship, boolean isPlayer) {
         return true;
     }
 
@@ -34,7 +36,7 @@ public class Battle {
     public void playerTurn(){
     }
 
-    public boolean isSunk() {
+    public boolean isSunk(int x, int y, String[][] grid) {
         return true;
     }
 
