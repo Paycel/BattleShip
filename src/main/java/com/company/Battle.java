@@ -74,10 +74,10 @@ public class Battle {
             int way = -1, x = -1, y = -1;
             ArrayList<String> buff = new ArrayList<>();
             Boolean[] ways = new Boolean[4];
-            Arrays.fill(ways, true);
             do {
                 x = input.nextInt();
                 y = input.nextInt();
+                Arrays.fill(ways, true);
                 if (size > 1) {
                     // up
                     if (x - size + 1 >= 0) {
